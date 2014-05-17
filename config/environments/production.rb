@@ -31,7 +31,7 @@ Staticpageapp::Application.configure do
 
   # Generate digests for assets URLs.
   config.assets.digest = true
-
+  config.force_ssl = true
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
 
@@ -79,5 +79,5 @@ Staticpageapp::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
+  #config.active_record.dump_schema_after_migration = false
 end
