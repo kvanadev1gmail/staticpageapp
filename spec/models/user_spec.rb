@@ -17,6 +17,8 @@ describe User do
   it { should respond_to(:password_digest) }
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
+  it { should respond_to(:remember_token) }
+  it { should respond_to(:authenticate) }
 
   it { should be_valid }
 
@@ -39,6 +41,10 @@ describe User do
       addresses.each do |invalid_address|
         @user.email = invalid_address
         expect(@user).not_to be_valid
+      end
+      describe "remember token" do
+        before { @user.save }
+        its(:remember_token) { should_not be_blank }
       end
     end
   end

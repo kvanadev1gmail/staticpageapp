@@ -3,9 +3,11 @@ Rails.application.routes.draw do
 
 #staticpageapp::Application.routes.draw do
 
-
+  resources :sessions, only: [:new, :create, :destroy]
 root  'staticpageapps#home'
   match '/signup',  to: 'users#new',            via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
   match '/help',    to: 'staticpageapp#help',    via: 'get'
   match '/about',   to: 'staticpageapp#about',   via: 'get'
   match '/contact', to: 'staticpageapp#contact', via: 'get'
