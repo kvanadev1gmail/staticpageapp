@@ -3,4 +3,10 @@
   <data-source source="LOCAL" name="Rails staticpageapp: development" uuid="a2890570-a8bc-4449-a2c3-4e95afb15211">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source source="LOCAL" name="Rails staticpageapp: test" uuid="0508c629-ee02-4d49-aaf9-ccb5e9deea58">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails staticpageapp: production" uuid="c5176281-ba38-48fb-b10c-0aaaac342bdf">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
